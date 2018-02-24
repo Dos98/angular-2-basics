@@ -1,0 +1,6 @@
+<p [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}"
+>
+<!-- only add class if it is true -->
+    {{'Server'}} with ID {{serverId}} is {{getServerStatus()}}</p>
+<!-- property binding of directivr ## here ngStyle expects to get a javascript object -->
